@@ -1,0 +1,536 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+}
+        /*==== HEADER SECTION ====*/
+
+header{
+    background-color: #464646;
+    height: 50px;
+    margin: 0;
+    position: fixed;
+     top: 0;
+    z-index: 1;
+    width: 100%;
+
+}
+/* ---brand name -- */
+.reSi-brandName{
+    border: none;
+    color: #fff;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold !important;
+    padding: 3px;
+    position: relative;
+    top: 19.5px;
+    left: 35px;
+}
+/*--Search bar--*/
+.reSi-searchBar{
+   
+    background-color: rgba(255,255,255,0.3);
+    border: none;
+    border-radius: 3px;
+    color: rgb(219, 219, 219);
+    font-size: 12px;
+    height: 18px;
+    position: absolute;
+    right: 115px;
+    top: 20px;
+    width: 120px;
+}
+
+/*--=== search button ===--*/
+.reSi-search-btn{
+    border: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: #54e346;
+    height: 18px;
+    font-size: 13px;
+    padding-bottom: 2.5px;
+    position: absolute;
+    top: 20px;
+    right: 105px;
+    width: 40px;
+}
+.fa-search {    
+    color: #fff;
+}
+/*--Home icon--*/
+.fa-home{
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+
+}
+.home-lg{
+    display: none!important;
+}
+/*--- Topics ---*/
+.reSi-topics{
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 47px;
+}
+/*--drop-down menu icon--*/
+.fa-angle-down{
+    color: #fff;
+
+}
+/* ---user icon-- */
+.fa-user{
+    color: #fff;
+    position: absolute;
+    top: 17px;
+    right: 22px;
+}
+.user-lg{
+    display: none ! important;
+}
+.fa-user .reSi-user-details{
+    background-color: #fff;
+   display: none;
+    height: 30px;
+    padding: 7px;
+    position: absolute;
+    top: 37px;
+    right: -10px;
+    width: 70px;
+  }
+  .fa-user:hover .reSi-user-details{
+    display: block;
+  }
+  .user-angle-down{
+      position: absolute;
+      top: 20px;
+      right: 10px;
+  }
+  .reSi-user-details a{
+      color: #000;
+      font-size: 14px;
+      font-family:  sans-serif;
+      text-decoration: none;
+  }
+/* === Topics === */
+.reSi-topics-menu-item{
+    background-color: #fff;
+    border: none;
+    border-radius: 7px;
+    display: none;
+    padding: 15px;
+    position: absolute;
+    top: 40px;
+    right: -30px;
+    width: 150px;
+    height: 200px;
+}
+.reSi-topics-menu-item a{
+    color: #000;
+    display: block;
+    line-height: 20px;
+    text-decoration: none;
+}
+.reSi-topics:hover .reSi-topics-menu-item{
+    display: block;
+}
+
+/*===== MAIN SECTION =====*/
+
+.reSi-post{
+    
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border: none;
+    border-radius: 5px;
+    min-height: 270px;
+    margin-top: 10px;
+    overflow: auto;
+    padding: 20px;
+    position: relative;
+    top: 90px;
+    left: 8%;
+    width: 300px;
+}
+
+.reSi-post h2{
+    color: #000;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.reSi-post p{
+    font-size: 12px;
+    padding-top: 7px;
+}
+.reSi-post .reSi-user-icon{
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+  
+}
+.reSi-post .reSi-user-name{
+    display: inline-block;
+    font-size: 11px;
+    position: absolute;
+    top: 5%;
+    left: 17%;
+}
+.reSi-follow-btn{
+    display: inline-block;
+    font-size: 9px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/* -- PLUS BUTTON-- */
+.fa-plus-circle{
+    color: #54e346;
+     position: fixed;
+     top: 90vh;
+     right: 15px;
+     z-index:1;
+}
+
+/* ==== CREATE POST/ARTICLE SECTION ==== */
+
+/* -- article title label */
+#reSi-label1{
+    margin-top: 20px;
+}
+
+/* -- article label */
+
+.reSi-createArticle label{
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.reSi-createArticle{
+    height: 500px;
+    position: fixed;
+    top: 15vh;
+    right: 30px;
+    width: 302px;
+}
+
+
+.reSi-createArticle input{
+    border: 1px solid #35C1E0;
+    height: 40px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.reSi-article-content{
+    border: 1px solid #35C1E0;
+    height: 100px;
+    width: 100%;
+    
+}
+.reSi-createArticle .reSi-create-article-btn{
+    border: none;
+    border-radius: 7px;
+    background-color: #54e346;
+    color: #fff;
+    font-size: 18px !important;
+    height: 40px;
+    font-size: 13px;
+    padding-bottom: 2.5px;
+    position: absolute;
+    top: 23rem;
+    right: 5rem;
+    width: 150px;
+}
+/* ==== FULL  ARTICLE SECTION ====*/
+
+.reSi-post-article{
+    
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border: none;
+    border-radius: 5px;
+    height: 70vh;
+    margin-top: 10px;
+    padding: 10px;
+    position: relative;
+    top: 90px;
+    left: 8%;
+    width: 300px;
+}
+.reSi-post-article h2{
+    font-size: 16px;
+    margin-top: 10px;
+}
+.reSi-post-article p{
+    font-size: 13px;
+    padding-top: 10px;
+    padding-right: 5px;
+}
+.reSi-post-article .reSi-user-icon{
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+  
+}
+.reSi-post-article .reSi-user-name{
+    display: inline-block;
+    font-size: 11px;
+    position: absolute;
+    top: 10px;
+    left: 43px
+}
+.comment-area{
+    border: 1px solid #000;
+    border-radius: 5px;
+    position: absolute;
+    top: 39rem;
+    left: 32px;
+    width: 58%;
+}
+.comment-post{
+    border: none;
+    border-radius: 7px;
+    background-color: green;
+    width: 22%;
+    height: 30px;
+    padding: 7px;
+    position: absolute;
+    top: 39rem;
+    right: 35px;
+}
+.comment-post p{
+    color: #fff;
+    font-size: 13.5px;
+    font-weight: bold;
+}
+/* --- LIKE BUTTON -- */
+.reSi-like{
+    color: #808080;
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+}
+.reSi-share{
+    color: #808080;
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+}
+.reSi-comment{
+    color: #808080;
+    position: absolute;
+    bottom: 15px;
+    right: 47%;
+}
+/* ---SIDE SHORTCUT TOPIC --- */
+.side-shortcut-topics{
+    display: none;
+}
+
+/* ==== MEDIA QUERY SECTION START ==== */
+
+@media (min-width:500px){
+    header{
+        height: 95px;
+    }
+
+    /* -- Home Icon -- */
+    .home-sm{
+        display: none !important;
+    }
+    .home-lg{
+        display: inline-block !important;
+        position: absolute;
+        top: 37%;
+        left: 5%;
+    }
+     
+    /* --- User Icon --- */
+    .fa-user{
+        position: absolute;
+        top: 37%;
+        right: 5%;
+    }
+    .user-lg{
+        cursor: pointer;
+        display: inline-block !important;
+    }
+    .user-lg .reSi-user-details{
+        position: relative;
+        top: 15px;
+        right: 30px;
+    }
+    .fa-user:hover .reSi-user-details{
+        display: none;
+
+      }
+    .user-lg .reSi-user-details a {
+        position: absolute;
+        /* top: -65px; */
+    }
+    .user-sm{
+        display: none !important;
+    }
+
+    /* --- user angle down --- */
+
+    .user-angle-down{
+        display: none !important;
+    }
+
+    /* --- SEARCH BAR --- */
+    .reSi-searchBar{
+        cursor: pointer;
+        height: 40%;
+        position: absolute;
+        top:45%;
+        right: 30%;
+        width: 570px;
+        
+    }
+    .reSi-search-btn{
+        cursor: pointer;
+        height: 40%;
+        position: absolute;
+        top: 45%;
+        right: 22.5%;
+        width:7%;
+    }
+    
+    /* -- brand name-- */
+    .reSi-brandName{
+        font-size: 20px;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+    }
+    /* --topics-- */
+    .reSi-topics{
+        display:none;
+    }
+    /* ==== MAIN START( Post) ==== */
+    .reSi-post{
+        min-height: 270px;
+        position: relative;
+        left: 30%;
+        /* top: 10%; */
+        width: 600px;
+    }
+   .reSi-post-article{
+    min-height: 200px;
+    margin-top: 50px;
+    position: relative;
+    left: 30%;
+    /* top: 50%; */
+    width: 600px;
+   }
+   .article-body{
+       height: 800px;
+   }
+    
+    .inside-header{
+        background-color: yellow;
+        position: absolute;
+        top: 0;
+        left:0;
+        width: 100%;
+        height: 50px;
+    }
+    main{
+        margin-top: 5%;
+
+    }
+    .side-shortcut-topics{
+        background-color: #fff;
+        box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+        display: inline-block !important;
+        width: 13%;
+        height: 70vh;
+        position: fixed;
+        top: 25%;
+        left: 1%;
+        z-index: 1;
+    }
+    .side-shortcut-topics h2{
+        margin-top: 15px;
+        margin-bottom: 10px;
+        margin-left: 16px;
+        text-decoration: underline;
+
+    }
+    .side-shortcut-topics  a {
+        display: block;
+        padding:2px;
+        margin-left: 16px;
+        text-decoration: none;
+    }
+    .side-shortcut-topics  a:hover{
+        text-decoration: underline;
+        text-decoration-color: #54e346;
+    }
+    /* --- USER NAME --- */
+    .reSi-post .reSi-user-name{
+        font-size: 11px;
+        position: absolute;
+        top: 7%;
+        left: 10%;
+    }
+    /* ==== CREATE ARTICLE PAGE ==== */
+    .reSi-createArticle{
+        margin-top: 60px;
+        position: relative;
+        left: 30%;
+        width: 45%;
+    }
+    .reSi-createArticle .reSi-create-article-btn{
+        position: absolute;
+        top: 27rem;
+        left: 15rem;
+      
+    }
+    .reSi-article-content{
+        resize: none;
+        height: 200px;
+    }
+    .reSi-createArticle label{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .comment-area{
+        position: absolute;
+        left: 30%;
+        width: 30%;
+    }
+    .comment-post{
+        height: 7.3%;
+        
+        position: absolute;
+        right: 30%;
+        width: 7%;
+    }
+    .comment-post p{
+        /* margin-top: 7px; */
+        padding: 10px;
+    }
+    .web-house{
+        width: 3%;
+        color: #fff;
+
+    }
+}
